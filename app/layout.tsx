@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter, Oswald } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' })
-const oswald = Oswald({ subsets: ['latin', 'cyrillic'], variable: '--font-oswald' })
+const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'], variable: '--font-montserrat' })
 
 export const metadata: Metadata = {
   title: '4GEAR - Автосервіс в Одесі | Професійний ремонт та обслуговування авто',
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
-  themeColor: '#0a0a0a',
+  themeColor: '#111111',
 }
 
 export default function RootLayout({
@@ -29,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={`${inter.variable} ${oswald.variable} font-sans antialiased`}>
+      <body className={`${montserrat.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

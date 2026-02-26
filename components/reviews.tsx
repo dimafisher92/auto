@@ -35,14 +35,14 @@ const reviews = [
 
 export function Reviews() {
   return (
-    <section id="reviews" className="scroll-mt-20 bg-background py-20 lg:py-28">
+    <section id="reviews" className="scroll-mt-20 bg-[#111111] py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-[#f0f0f0] sm:text-4xl lg:text-5xl">
             Відгуки наших{" "}
-            <span className="text-primary">клієнтів</span>
+            <span className="text-[#f0e060]">клієнтів</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground leading-relaxed">
+          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-[#c0c0c0]">
             Нам довіряють сотні автовласників Одеси. Ось що кажуть наші клієнти про роботу 4GEAR.
           </p>
         </div>
@@ -51,25 +51,25 @@ export function Reviews() {
           {reviews.map((review) => (
             <div
               key={review.name}
-              className="flex flex-col rounded-lg border border-border bg-card p-6 transition-all hover:border-primary/30"
+              className="flex flex-col rounded-lg border border-[#3c3c3c] bg-[#1c1c1c] p-6 transition-all hover:border-[#f0e060]/30"
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-heading font-bold text-lg">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f0e060]/10 font-heading text-lg font-bold text-[#f0e060]">
                   {review.name.charAt(0)}
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">{review.name}</p>
+                  <p className="font-semibold text-[#f0f0f0]">{review.name}</p>
                   <div className="flex">
                     {[...Array(review.rating)].map((_, i) => (
                       <Star
                         key={i}
-                        className="h-3.5 w-3.5 fill-primary text-primary"
+                        className="h-3.5 w-3.5 fill-[#f0e060] text-[#f0e060]"
                       />
                     ))}
                   </div>
                 </div>
               </div>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-sm leading-relaxed text-[#c0c0c0]">
                 {review.text}
               </p>
             </div>

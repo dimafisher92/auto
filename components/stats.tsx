@@ -51,10 +51,10 @@ function StatItem({ value, suffix, label }: { value: number; suffix: string; lab
 
   return (
     <div ref={ref} className="flex flex-col items-center gap-2 p-6">
-      <span className="font-heading text-4xl font-bold text-primary sm:text-5xl lg:text-6xl">
+      <span className="font-heading text-4xl font-bold text-[#f0e060] sm:text-5xl lg:text-6xl">
         {count}{suffix}
       </span>
-      <span className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
+      <span className="text-sm font-medium uppercase tracking-wider text-[#c0c0c0]">
         {label}
       </span>
     </div>
@@ -63,7 +63,7 @@ function StatItem({ value, suffix, label }: { value: number; suffix: string; lab
 
 export function Stats() {
   return (
-    <section className="border-y border-border bg-secondary py-12">
+    <section className="border-y border-[#3c3c3c] bg-[#0d3d3d] py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {stats.map((stat) => (

@@ -62,14 +62,14 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-20 bg-secondary py-20 lg:py-28">
+    <section id="services" className="scroll-mt-20 bg-[#1c1c1c] py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-foreground sm:text-4xl lg:text-5xl">
-            Наші <span className="text-primary">послуги</span>
+          <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-[#f0f0f0] sm:text-4xl lg:text-5xl">
+            Наші <span className="text-[#f0e060]">послуги</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground leading-relaxed">
+          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-[#c0c0c0]">
             Ми пропонуємо повний спектр послуг з ремонту та обслуговування автомобілів. Якість та надійність — наш пріоритет.
           </p>
         </div>
@@ -79,15 +79,15 @@ export function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group flex flex-col items-center rounded-lg border border-border bg-card p-8 text-center transition-all hover:border-primary/50 hover:bg-card/80"
+              className="group flex flex-col items-center rounded-lg border border-[#3c3c3c] bg-[#111111] p-8 text-center transition-all hover:border-[#f0e060]/50"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#f0e060]/30 bg-[#f0e060]/10 text-[#f0e060] transition-colors group-hover:bg-[#f0e060]/20">
                 <service.icon className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 font-heading text-lg font-semibold uppercase tracking-wide text-foreground">
+              <h3 className="mt-5 font-heading text-lg font-semibold uppercase tracking-wide text-[#f0f0f0]">
                 {service.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-sm leading-relaxed text-[#c0c0c0]">
                 {service.description}
               </p>
             </div>
