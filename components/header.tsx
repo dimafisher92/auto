@@ -47,9 +47,9 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden items-center gap-4 lg:flex">
-            <a href="tel:+380XXXXXXXXX" className="flex items-center gap-2 text-sm text-[#c0c0c0] transition-colors hover:text-[#f0e060]">
+            <a href="tel:+380993136992" className="flex items-center gap-2 text-sm text-[#c0c0c0] transition-colors hover:text-[#f0e060]">
               <Phone className="h-4 w-4" />
-              <span>+380 XX XXX XX XX</span>
+              <span>+380 99 313 69 92</span>
             </a>
             <Button asChild className="bg-[#f0e060] font-semibold uppercase tracking-wider text-[#111111] hover:bg-[#f0e060]/90">
               <a href="#contacts">Записатись</a>
@@ -82,6 +82,14 @@ export function Header() {
                   {link.label}
                 </a>
               ))}
+              <a
+                href="tel:+380993136992"
+                className="flex items-center gap-2 text-base font-medium text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
+                onClick={() => setIsOpen(false)}
+              >
+                <Phone className="h-4 w-4" />
+                +380 99 313 69 92
+              </a>
               <Button asChild className="mt-2 w-full bg-[#f0e060] font-semibold uppercase tracking-wider text-[#111111] hover:bg-[#f0e060]/90">
                 <a href="#contacts" onClick={() => setIsOpen(false)}>Записатись на сервіс</a>
               </Button>
