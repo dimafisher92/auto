@@ -1,16 +1,29 @@
+import { Header } from "@/components/header"
+import { Hero } from "@/components/hero"
+import { Stats } from "@/components/stats"
+import { About } from "@/components/about"
+import { Services } from "@/components/services"
+import { WhyUs } from "@/components/why-us"
+import { CtaBanner } from "@/components/cta-banner"
+import { Reviews } from "@/components/reviews"
+import { Contacts } from "@/components/contacts"
+import { Footer } from "@/components/footer"
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans">
-      <main className="flex w-full max-w-3xl flex-col items-center gap-8 px-6 py-16 text-center sm:items-start sm:text-left">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight">
-            4gear
-          </h1>
-          <p className="max-w-md text-lg text-muted-foreground">
-            To get started, send a prompt or modify this page directly.
-          </p>
-        </div>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Stats />
+        <About />
+        <Services />
+        <WhyUs />
+        <CtaBanner />
+        <Reviews />
+        <Contacts />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }

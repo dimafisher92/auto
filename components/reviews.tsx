@@ -1,0 +1,81 @@
+import { Star } from "lucide-react"
+
+const reviews = [
+  {
+    name: "Олександр К.",
+    rating: 5,
+    text: "Відмінний сервіс! Привіз машину на діагностику, все зробили швидко та якісно. Ціни адекватні, майстри знають свою справу. Рекомендую!",
+  },
+  {
+    name: "Марина С.",
+    rating: 5,
+    text: "Дуже задоволена обслуговуванням. Зробили ТО за регламентом, замінили все що потрібно. Все чесно, без нав'язування зайвих послуг.",
+  },
+  {
+    name: "Дмитро П.",
+    rating: 5,
+    text: "Вже не перший раз звертаюся до 4GEAR. Завжди якісно, вчасно і за розумною ціною. Хлопці — професіонали своєї справи!",
+  },
+  {
+    name: "Ірина В.",
+    rating: 5,
+    text: "Порекомендували друзі, і я не пошкодувала. Швидко знайшли проблему з електрикою, яку інші сервіси не могли визначити. Дякую!",
+  },
+  {
+    name: "Андрій Л.",
+    rating: 5,
+    text: "Ремонт ходової зробили за один день. Все детально пояснили, показали що міняли. Приємно мати справу з чесними людьми.",
+  },
+  {
+    name: "Тетяна М.",
+    rating: 5,
+    text: "Обслуговую тут свій автомобіль вже два роки. Завжди все на вищому рівні. Рекомендую всім, хто шукає надійний автосервіс в Одесі.",
+  },
+]
+
+export function Reviews() {
+  return (
+    <section id="reviews" className="scroll-mt-20 bg-background py-20 lg:py-28">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-foreground sm:text-4xl lg:text-5xl">
+            Відгуки наших{" "}
+            <span className="text-primary">клієнтів</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground leading-relaxed">
+            Нам довіряють сотні автовласників Одеси. Ось що кажуть наші клієнти про роботу 4GEAR.
+          </p>
+        </div>
+
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {reviews.map((review) => (
+            <div
+              key={review.name}
+              className="flex flex-col rounded-lg border border-border bg-card p-6 transition-all hover:border-primary/30"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary font-heading font-bold text-lg">
+                  {review.name.charAt(0)}
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">{review.name}</p>
+                  <div className="flex">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-3.5 w-3.5 fill-primary text-primary"
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                {review.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
