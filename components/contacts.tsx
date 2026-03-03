@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: MessageCircle,
     title: "Instagram",
-    lines: ["@4gear.odesa Запис в дірект"],
+    lines: ["@4gear.odesa, Запис в дірект"],
     href: "https://www.instagram.com/4gear.odesa",
   },
 ]
