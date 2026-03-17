@@ -52,7 +52,7 @@ export function Header() {
               <span>+380 99 313 69 92</span>
             </a>
             <Button asChild className="bg-[#f0e060] font-semibold uppercase tracking-wider text-[#111111] hover:bg-[#f0e060]/90">
-              <a href="#contacts">Записатись</a>
+              <a href="tel:+380993136992">Зателефонувати</a>
             </Button>
           </div>
 
@@ -91,7 +91,7 @@ export function Header() {
                 +380 99 313 69 92
               </a>
               <Button asChild className="mt-2 w-full bg-[#f0e060] font-semibold uppercase tracking-wider text-[#111111] hover:bg-[#f0e060]/90">
-                <a href="#contacts" onClick={() => setIsOpen(false)}>Записатись на сервіс</a>
+                <a href="tel:+380993136992" onClick={() => setIsOpen(false)}>Зателефонувати</a>
               </Button>
             </div>
           </div>

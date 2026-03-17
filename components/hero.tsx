@@ -46,7 +46,7 @@ export function Hero() {
             size="lg"
             className="bg-[#f0e060] px-8 py-6 text-base font-semibold uppercase tracking-wider text-[#111111] hover:bg-[#f0e060]/90"
           >
-            <a href="#contacts">Записатись на сервіс</a>
+            <a href="#how-to-book">Як записатись?</a>
           </Button>
           <Button
             asChild

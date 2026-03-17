@@ -7,6 +7,7 @@ import { WhyUs } from "@/components/why-us"
 import { CtaBanner } from "@/components/cta-banner"
 import { Reviews } from "@/components/reviews"
 import { InstagramFeed } from "@/components/instagram-feed"
+import { HowToBook } from "@/components/how-to-book"
 import { Contacts } from "@/components/contacts"
 import { Footer } from "@/components/footer"
 
@@ -23,6 +24,7 @@ export default function Home() {
         <CtaBanner />
         <Reviews />
         <InstagramFeed />
+        <HowToBook />
         <Contacts />
       </main>
       <Footer />
