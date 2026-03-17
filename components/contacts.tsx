@@ -10,7 +10,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Графік роботи",
-    lines: ["Пн - Сб: 9:00 - 19:00", "Нд: вихідний"],
+    lines: ["Щодня: 10:00 — 19:00"],
   },
   {
     icon: Phone,

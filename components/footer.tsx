@@ -1,4 +1,4 @@
-import { Instagram, MapPin, Phone } from "lucide-react"
+import { Instagram, MapPin, Phone, Clock } from "lucide-react"
 import Image from "next/image"
 
 const footerNav = [
@@ -68,6 +68,10 @@ export function Footer() {
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                 вул. Якова Бреуса, 75, Одеса, 65000
               </a>
+              <span className="flex items-start gap-2 text-sm text-[#c0c0c0]">
+                <Clock className="mt-0.5 h-4 w-4 shrink-0" />
+                Щодня: 10:00 — 19:00
+              </span>
             </div>
           </div>
 

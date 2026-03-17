@@ -32,12 +32,12 @@ export function Hero() {
         </div>
 
         <h1 className="font-heading text-4xl font-bold uppercase tracking-wide text-[#f0f0f0] sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-          Ваш надійний{" "}
-          <span className="text-[#f0e060]">автосервіс</span>{" "}
+          Ваш преміальний{" "}
+          <span className="text-[#f0e060]">детейлінг</span>{" "}
           в Одесі
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#c0c0c0] sm:text-xl">
-          4GEAR — професійний автосервіс повного циклу. Діагностика, ремонт та обслуговування вашого автомобіля на найвищому рівні.
+          4GEAR — сервіс преміального догляду та детейлінгу автомобілів. Хімчистка, полірування, кераміка, бронеплівка та повний спектр автосервісних послуг.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
