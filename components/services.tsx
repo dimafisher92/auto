@@ -111,19 +111,19 @@ const autoServices: Service[] = [
 
 function ServiceCard({ service }: { service: Service }) {
   return (
-    <div className="group relative flex flex-col items-center rounded-lg border border-[#3c3c3c] bg-[#111111] p-8 text-center transition-all hover:border-[#f0e060]/50">
+    <div className="group relative flex flex-col items-center rounded-lg border border-[#3c3c3c] bg-[#111111] p-5 text-center transition-all hover:border-[#f0e060]/50 sm:p-8">
       {service.popular && (
-        <span className="absolute top-3 right-3 rounded-full bg-[#f0e060] px-3 py-0.5 text-xs font-bold uppercase tracking-wider text-[#111111]">
+        <span className="absolute top-2 right-2 rounded-full bg-[#f0e060] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#111111] sm:top-3 sm:right-3 sm:px-3 sm:text-xs">
           Популярне
         </span>
       )}
-      <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#f0e060]/30 bg-[#f0e060]/10 text-[#f0e060] transition-colors group-hover:bg-[#f0e060]/20">
-        <service.icon className="h-6 w-6" />
+      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#f0e060]/30 bg-[#f0e060]/10 text-[#f0e060] transition-colors group-hover:bg-[#f0e060]/20 sm:h-14 sm:w-14">
+        <service.icon className="h-5 w-5 sm:h-6 sm:w-6" />
       </div>
-      <h3 className="mt-5 font-heading text-lg font-semibold uppercase tracking-wide text-[#f0f0f0]">
+      <h3 className="mt-3 font-heading text-sm font-semibold uppercase tracking-wide text-[#f0f0f0] sm:mt-5 sm:text-lg">
         {service.title}
       </h3>
-      <p className="mt-3 text-sm leading-relaxed text-[#c0c0c0]">
+      <p className="mt-2 text-xs leading-relaxed text-[#c0c0c0] sm:mt-3 sm:text-sm">
         {service.description}
       </p>
     </div>
@@ -149,7 +149,7 @@ export function Services() {
           <h3 className="mb-8 text-center font-heading text-xl font-bold uppercase tracking-wide text-[#f0e060] sm:text-2xl">
             Детейлінг
           </h3>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3">
             {detailingServices.map((service) => (
               <ServiceCard key={service.title} service={service} />
             ))}
@@ -161,7 +161,7 @@ export function Services() {
           <h3 className="mb-8 text-center font-heading text-xl font-bold uppercase tracking-wide text-[#c0c0c0] sm:text-2xl">
             Автосервіс
           </h3>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
             {autoServices.map((service) => (
               <ServiceCard key={service.title} service={service} />
             ))}

@@ -39,18 +39,18 @@ export function Contacts() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
           {contactInfo.map((item) => {
             const content = (
-              <div className="flex flex-col items-center rounded-lg border border-[#3c3c3c] bg-[#111111] p-6 text-center transition-all hover:border-[#f0e060]/50 sm:p-8">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#f0e060]/30 bg-[#f0e060]/10 text-[#f0e060]">
-                  <item.icon className="h-6 w-6" />
+              <div className="flex flex-col items-center rounded-lg border border-[#3c3c3c] bg-[#111111] p-4 text-center transition-all hover:border-[#f0e060]/50 sm:p-6 lg:p-8">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#f0e060]/30 bg-[#f0e060]/10 text-[#f0e060] sm:h-14 sm:w-14">
+                  <item.icon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </div>
-                <h3 className="mt-4 font-heading text-lg font-semibold uppercase tracking-wide text-[#f0f0f0]">
+                <h3 className="mt-3 font-heading text-sm font-semibold uppercase tracking-wide text-[#f0f0f0] sm:mt-4 sm:text-lg">
                   {item.title}
                 </h3>
                 {item.lines.map((line) => (
-                  <p key={line} className="mt-1 text-sm text-[#c0c0c0]">
+                  <p key={line} className="mt-1 text-xs text-[#c0c0c0] sm:text-sm">
                     {line}
                   </p>
                 ))}
