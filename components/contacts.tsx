@@ -2,6 +2,18 @@ import { MapPin, Clock, Phone, MessageCircle } from "lucide-react"
 
 const contactInfo = [
   {
+    icon: MessageCircle,
+    title: "Instagram",
+    lines: ["@4gear.odesa", "Запис в дірект"],
+    href: "https://www.instagram.com/4gear.odesa",
+  },
+  {
+    icon: Phone,
+    title: "Телефон",
+    lines: ["+380 99 313 69 92"],
+    href: "tel:+380993136992",
+  },
+  {
     icon: MapPin,
     title: "Адреса",
     lines: ["вул. Якова Бреуса, 75", "Одеса, 65000"],
@@ -11,18 +23,6 @@ const contactInfo = [
     icon: Clock,
     title: "Графік роботи",
     lines: ["Щодня: 10:00 — 19:00"],
-  },
-  {
-    icon: Phone,
-    title: "Телефон",
-    lines: ["+380 99 313 69 92"],
-    href: "tel:+380993136992",
-  },
-  {
-    icon: MessageCircle,
-    title: "Instagram",
-    lines: ["@4gear.odesa", "Запис в дірект"],
-    href: "https://www.instagram.com/4gear.odesa",
   },
 ]
 
