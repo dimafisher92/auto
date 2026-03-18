@@ -15,6 +15,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'uk_UA',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
 }
 
 export const viewport = {
