@@ -9,38 +9,44 @@ const instagramPosts = [
   {
     id: 1,
     image: "/images/insta-1.jpg",
-    alt: "Ремонт двигуна в автосервісі 4GEAR",
-    caption: "Капітальний ремонт двигуна BMW",
+    alt: "BMW M340i в автосервісі 4GEAR",
+    caption: "BMW M340i — стиль та потужність",
   },
   {
     id: 2,
     image: "/images/insta-2.jpg",
-    alt: "Діагностика автомобіля в 4GEAR",
-    caption: "Комп'ютерна діагностика всіх систем",
+    alt: "Двигун BMW в автосервісі 4GEAR",
+    caption: "Діагностика та обслуговування двигуна",
   },
   {
     id: 3,
     image: "/images/insta-3.jpg",
-    alt: "Ремонт ходової частини в 4GEAR",
-    caption: "Заміна елементів підвіски",
+    alt: "Полірування кузова в 4GEAR",
+    caption: "Професійне полірування кузова",
   },
   {
     id: 4,
     image: "/images/insta-4.jpg",
-    alt: "Технічне обслуговування авто в 4GEAR",
-    caption: "Планове ТО за регламентом",
+    alt: "Професійна автохімія в 4GEAR",
+    caption: "Преміальна автохімія Ewocar",
   },
   {
     id: 5,
     image: "/images/insta-5.jpg",
-    alt: "Заміна масла та фільтрів в 4GEAR",
-    caption: "Заміна масла та фільтрів",
+    alt: "Ремонт електрики автомобіля в 4GEAR",
+    caption: "Ремонт електрики та проводки",
   },
   {
     id: 6,
     image: "/images/insta-6.jpg",
-    alt: "Робоче місце майстра 4GEAR",
-    caption: "Професійне обладнання",
+    alt: "Обслуговування двигуна BMW в 4GEAR",
+    caption: "Обслуговування двигуна BMW",
+  },
+  {
+    id: 7,
+    image: "/images/insta-7.jpg",
+    alt: "Хімчистка салону автомобіля в 4GEAR",
+    caption: "Хімчистка та прибирання салону",
   },
 ]
 
@@ -66,7 +72,7 @@ export function InstagramFeed() {
         </div>
 
         {/* Posts Grid */}
-        <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-6">
+        <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
           {instagramPosts.map((post) => (
             <a
               key={post.id}
