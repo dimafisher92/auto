@@ -7,11 +7,11 @@ import Image from "next/image"
 import Link from "next/link"
 
 const navLinks = [
-  { href: "#about", label: "Про нас" },
-  { href: "#services", label: "Послуги" },
-  { href: "#why-us", label: "Чому ми" },
-  { href: "#reviews", label: "Відгуки" },
-  { href: "#contacts", label: "Контакти" },
+  { href: "/#about", label: "Про нас" },
+  { href: "/#services", label: "Послуги" },
+  { href: "/#why-us", label: "Чому ми" },
+  { href: "/#reviews", label: "Відгуки" },
+  { href: "/#contacts", label: "Контакти" },
   { href: "/blog", label: "Блог" },
 ]
 
@@ -23,7 +23,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/images/logo-yellow.png"
               alt="4GEAR logo"
@@ -32,29 +32,19 @@ export function Header() {
               className="h-8 w-auto lg:h-10"
               priority
             />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-8 lg:flex" aria-label="Main navigation">
-            {navLinks.map((link) =>
-              link.href.startsWith("/") ? (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm font-medium uppercase tracking-wider text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm font-medium uppercase tracking-wider text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
-                >
-                  {link.label}
-                </a>
-              )
-            )}
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium uppercase tracking-wider text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
           {/* CTA Button */}
@@ -84,27 +74,16 @@ export function Header() {
         <nav className="border-t border-border bg-[#111111] lg:hidden" aria-label="Mobile navigation">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
             <div className="flex flex-col gap-4">
-              {navLinks.map((link) =>
-                link.href.startsWith("/") ? (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="text-base font-medium uppercase tracking-wider text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                ) : (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    className="text-base font-medium uppercase tracking-wider text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                )
-              )}
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-base font-medium uppercase tracking-wider text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <a
                 href="tel:+380993136992"
                 className="flex items-center gap-2 text-base font-medium text-[#c0c0c0] transition-colors hover:text-[#f0e060]"

@@ -3,11 +3,11 @@ import Image from "next/image"
 import Link from "next/link"
 
 const footerNav = [
-  { label: "Про нас", href: "#about" },
-  { label: "Послуги", href: "#services" },
-  { label: "Чому ми", href: "#why-us" },
-  { label: "Відгуки", href: "#reviews" },
-  { label: "Контакти", href: "#contacts" },
+  { label: "Про нас", href: "/#about" },
+  { label: "Послуги", href: "/#services" },
+  { label: "Чому ми", href: "/#why-us" },
+  { label: "Відгуки", href: "/#reviews" },
+  { label: "Контакти", href: "/#contacts" },
   { label: "Блог", href: "/blog" },
 ]
 
@@ -36,25 +36,15 @@ export function Footer() {
               Навігація
             </h3>
             <nav className="mt-4 flex flex-col gap-3" aria-label="Footer navigation">
-              {footerNav.map((link) =>
-                link.href.startsWith("/") ? (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="text-sm text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
-                  >
-                    {link.label}
-                  </Link>
-                ) : (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    className="text-sm text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
-                  >
-                    {link.label}
-                  </a>
-                )
-              )}
+              {footerNav.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-[#c0c0c0] transition-colors hover:text-[#f0e060]"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
           </div>
 
