@@ -1,0 +1,35 @@
+# robots.txt для 4gear.odesa.ua
+
+User-agent: *
+Allow: /
+
+# Запрет на индексацию служебных директорий (если есть)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /*.php$
+
+# Разрешаем индексацию блога
+Allow: /blog/
+
+# Карта сайта
+Sitemap: https://www.4gear.odesa.ua/sitemap.xml
+
+# Дополнительные директивы для крупных поисковиков
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Запрет для плохих ботов
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

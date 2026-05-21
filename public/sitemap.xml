@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Главная страница (одностраничный сайт) -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Блог -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Статьи блога -->
+
+  <!-- Статья 1: Преимущества керамического покрытия -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/perevahy-keramichnoho-pokrittia</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статья 2: Химчистка салона Одесса -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/himchystka-salonu-odesa</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статья 3: Антихром Одесса -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/antihrom-odesa</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статья 4: Полировка Одесса -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/polirovka-odesa</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статья 5: Детейлинг Одесса -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/deteyling-odesa</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статья 6: PPF пленка Одесса -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/ppf-plivka-odesa</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статья 7: Что такое керамика -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/shcho-take-keramika</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Статья 8: Как подготовить авто к зиме -->
+  <url>
+    <loc>https://www.4gear.odesa.ua/blog/yak-pidhotuvaty-avto-do-zimy</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
